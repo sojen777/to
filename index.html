@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#10172f" />
+    <title>致 雅蕾</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="phone-stage" id="app">
+      <div class="swiper story-swiper" aria-live="polite">
+        <div class="swiper-wrapper" id="storyWrapper"></div>
+      </div>
+
+      <div class="progress-shell" aria-hidden="true">
+        <span class="progress-count" id="progressCount">01 / 13</span>
+        <span class="progress-track"><span class="progress-fill" id="progressFill"></span></span>
+      </div>
+
+      <button class="music-toggle" id="musicToggle" type="button" aria-label="播放背景音乐">
+        <span class="music-glyph" aria-hidden="true"></span>
+      </button>
+
+      <div class="slide-cue" aria-hidden="true">
+        <span></span>
+      </div>
+
+      <div class="final-overlay" id="finalOverlay" aria-hidden="true">
+        <div class="final-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="finalOverlayTitle">
+          <p class="final-overlay__eyebrow" id="finalOverlayEyebrow"></p>
+          <h2 id="finalOverlayTitle"></h2>
+          <p id="finalOverlayBody"></p>
+          <button type="button" id="finalOverlayClose" aria-label="关闭"></button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
